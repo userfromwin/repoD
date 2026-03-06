@@ -1,0 +1,11 @@
+init=/bin/bash
+
+/etc/default/grub
+/etc/grub.d/
+
+<like reload>
+grub-mkconfig
+
+systemd.unit=graphical.target
+
+/etc/ld.so.cache
